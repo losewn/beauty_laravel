@@ -11,7 +11,7 @@
 <div class="container">
     <div class="row">
         <header>
-            <h1>Beauty Laravel</h1>
+            <h1>Адміністративна панель</h1>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -20,10 +20,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <button type="button" class="btn btn-outline-secondary"><a class="nav-link" href="/admin/appointment">Адмін.панель</a></button>
+                            <button type="button" class="btn btn-outline-secondary"><a class="nav-link" href="{{ route('admin-all-salons') }}">Всі салони</a></button>
                         </li>
                         <li class="nav-item">
-                            <button type="button" class="btn btn-outline-secondary"><a class="nav-link" href="/">Головна</a></button>
+                            <button type="button" class="btn btn-outline-secondary"><a class="nav-link" href="{{ route('admin-all-services') }}">Всі послуги</a></button>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-outline-secondary"><a class="nav-link" href="{{ route('admin-all-appointment') }}">Всі записи</a></button>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-outline-secondary"><a class="nav-link" href="/">На сайт</a></button>
                         </li>
                     </ul>
                 </div>
