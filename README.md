@@ -64,3 +64,26 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Як розгорнути проект
+
+### (опис буде для -nix подібних систем)
+
+Для того щоб розгорнути проект потрібно:
+- Встановти Docksal/Docker
+- Стягнути проект з git
+- Розгорнути проект локально ($ fin init, $fin start)
+- Імпортувати базу(знаходиться в корні docroot, $fin db import <file>, or $fim mysqli <file>)
+- Запустити $fin bash в корні docroot, (тут же працювати з artisan)
+- Запустити $php artisan serve (для старут проекту)
+- Artisan дасть приблизно таку урлу - http://127.0.0.1:8001
+
+Коли проект буде працювати тільки під доксалом/докером, можна використати його сервер/контейнери.
+В доксалі прописані такі налаштування: урл - http://beauty-laravel.docksal.site/
+Вистачить тільки (перші 4 пункти): 
+- Встановти Docksal/Docker
+- Стягнути проект з git
+- Розгорнути проект локально ($ fin init, $fin start)
+- Імпортувати базу(знаходиться в корні docroot, $fin db import <file>, or $fim mysqli <file>)
+
+Дякую! )
